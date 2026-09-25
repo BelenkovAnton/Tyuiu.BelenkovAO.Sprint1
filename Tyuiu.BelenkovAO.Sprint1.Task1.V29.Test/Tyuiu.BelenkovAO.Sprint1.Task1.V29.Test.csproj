@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+		<PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+		<PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+		<PackageReference Include="coverlet.collector" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tyuiu.BelenkovAO.Sprint1.Task1.V29.Lib\Tyuiu.BelenkovAO.Sprint1.Task1.V29.Lib.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="tyuiu.cources.programming.interfaces">
+			<HintPath>..\DLL\tyuiu.cources.programming.interfaces.dll</HintPath>
+			<Private>true</Private>
+		</Reference>
+	</ItemGroup>
+
+</Project>
